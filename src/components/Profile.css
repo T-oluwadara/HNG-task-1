@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Josefin+Sans:wght@300&display=swap");
+
+.body {
+  background-color: white;
+  margin: 30px 150px;
+  align-items: center;
+  overflow: hidden;
+}
+
+.share-img {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 208px;
+
+  top: -8px;
+  margin: 20px 0;
+}
+
+.profile-name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.header {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#profile__img {
+  width: 88px;
+  height: 88px;
+  object-fit: cover;
+  border-radius: 275px;
+}
+
+.link-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.link-btns {
+  align-items: center;
+  padding: 24px 32px;
+  border: 1px solid #eaecf0;
+  background: #eaecf0;
+  text-align: center;
+  margin-top: 30px;
+  border-radius: 8px;
+}
+
+.link-btns a {
+  text-decoration: none;
+  color: #101828;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+#twitter {
+  font-weight: 500 !important;
+}
+
+#slack {
+  display: none;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.footer {
+  margin-top: 20px;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  text-align: center;
+
+  color: #667085;
+}
+
+@media (max-width: 580px) {
+  .body {
+    margin: 10px 30px;
+  }
+
+  .share-img {
+    right: 50px;
+  }
+
+  .footer-logo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
