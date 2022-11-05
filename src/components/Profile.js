@@ -6,6 +6,7 @@ import slacklogo from "../components/images/slack.svg";
 import githublogo from "../components/images/github.svg";
 import zurilogo from "../components/images/zuri.svg";
 import iglogo from "../components/images/i4g.svg";
+import { Link } from "react-router-dom";
 
 function Profile() {
   return (
@@ -13,6 +14,11 @@ function Profile() {
       <img src={sharebtn} alt="share button" className="share-img"></img>
       <div className="header">
         <img src={profile} alt="header" id="profile__img"></img>
+        <div>
+          <a href="" id="slack">
+            @tofs
+          </a>
+        </div>
         <h2 className="profile-name">Oluwadara Victoria</h2>
       </div>
 
@@ -20,12 +26,6 @@ function Profile() {
         <div className="link-btns">
           <a href="https://twitter.com/tohfunmii" id="twitter">
             @tohfunmii
-          </a>
-        </div>
-
-        <div>
-          <a href="" id="slack">
-            @tofs
           </a>
         </div>
 
@@ -58,15 +58,16 @@ function Profile() {
             Design Books
           </a>
         </div>
+
+        <div className="link-btns">
+          <Link to="/contact">Contact Me</Link>
+        </div>
       </div>
 
       <div className="social-icons">
-        <a href="">
-          <img src={slacklogo} alt="slack logo"></img>
-        </a>
-        <a href="">
-          <img src={githublogo} alt="github logo"></img>
-        </a>
+        <img src={slacklogo} alt="slack logo"></img>
+
+        <img src={githublogo} alt="github logo"></img>
       </div>
 
       <div className="footer">
